@@ -17,7 +17,7 @@ public class MealTestData {
     public static final int ADMIN_ID = START_SEQ + 1;
     public static final int NOT_FOUND = 10;
 
-    public static final int MEAL_USER_ID = 100000;
+    public static final int MEAL_USER_ID = 100005;
 
     public static final List<Meal> MEALS = Arrays.asList(
             new Meal(LocalDateTime.of(2020, Month.JANUARY, 30, 10, 0), "Завтрак", 500),
