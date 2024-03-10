@@ -24,11 +24,11 @@ public class MealServlet extends HttpServlet {
 
     private MealRestController mealController;
 
-    @Override
-    public void init() {
-        WebApplicationContext springContext = WebApplicationContextUtils.getRequiredWebApplicationContext(getServletContext());
-        mealController = springContext.getBean(MealRestController.class);
-    }
+//    @Override
+//    public void init() {
+//        WebApplicationContext springContext = WebApplicationContextUtils.getRequiredWebApplicationContext(getServletContext());
+//        mealController = springContext.getBean(MealRestController.class);
+//    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
