@@ -62,6 +62,7 @@ public class JspMealController {
         log.info("Action is CREATE");
         Meal meal = new Meal(LocalDateTime.now().truncatedTo(ChronoUnit.MINUTES), "", 1000);
         model.addAttribute("meal", meal);
+        model.addAttribute("create", "create");
         return ("/mealForm");
     }
 
