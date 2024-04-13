@@ -4,6 +4,10 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="_csrf" content="${_csrf.token}"/>
+    <meta name="_csrf_header" content="${_csrf.headerName}"/>
+
     <title><spring:message code="app.title"/></title>
     <base href="${pageContext.request.contextPath}/"/>
 
@@ -16,7 +20,7 @@
     <link rel="shortcut icon" href="resources/images/icon-meal.png">
 
     <%--http://stackoverflow.com/a/24070373/548473--%>
-    <script src="webjars/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="webjars/jquery/3.7.1/jquery.min.js"></script>
     <script src="webjars/bootstrap/4.6.2/js/bootstrap.min.js" defer></script>
     <script src="webjars/datatables/1.13.5/js/jquery.dataTables.min.js" defer></script>
     <script src="webjars/datatables/1.13.5/js/dataTables.bootstrap4.min.js" defer></script>
